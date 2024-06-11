@@ -1,6 +1,40 @@
 body{
     background-color: hsl(212, 45%, 89%);
     font-family: "Outfit", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .qr-container{
+    flex-direction: column;
+    align-content: space-around;
+    text-align: center;
+    width: 320px;
+    height: 497px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(220, 15%, 55%);
+    border-radius: 20px;
+    box-shadow: 0 15px 20px hsl(212, 18%, 81%);
+  }
+
+#qrcode{
+    max-width: 288px;
+    max-height: 288px;
+    border-radius: 10px;
+}
+
+#hline{
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.qr-container p{
+    margin-left: 12px;
+    margin-right: 12px;
   }
 
 .attribution { 
@@ -13,44 +47,6 @@ body{
 
 .attribution a { 
     color: hsl(266, 80%, 33%); 
-}
-
-.qr-container{
-    display: block;
-    position: relative;
-    margin: auto;
-    top: 150px; 
-    width: 320px;
-    height: 497px;
-    background-color: hsl(0, 0%, 100%);
-    box-shadow: 0 15px 20px hsl(212, 18%, 81%);
-    border-radius: 10px;
-    
-}
-
-.qr-container p{
-    text-align: center;
-    color: hsl(220, 15%, 55%);
-    font-size: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-} 
-
-#qrcode{
-    position: relative;
-    left: 16px;
-    top: 16px;
-    width: 288px;
-    height: 288px;
-    border-radius: 10px;
-}
-
-#hline{
-    padding-top: 15px;
-    color: hsl(218, 44%, 22%);
-    font-weight: 700;
-    font-size: 18px;
 }
 
 
